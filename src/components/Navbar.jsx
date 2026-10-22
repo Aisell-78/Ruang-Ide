@@ -47,8 +47,15 @@ export default function Navbar({ count, onCart }) {
           >
             {open ? <X size={22} /> : <MenuIcon size={22} />}
           </button>
-          <a href="#home" className="block">
-            <img src="/logo.png" alt="Ruang Ide" width="244" height="69" className="h-11 w-auto md:h-12" />
+          {/* Logo disusun dari ikon + teks font asli supaya tetap tajam di layar apa pun */}
+          <a href="#home" className="flex items-center gap-2 text-espresso" aria-label="Ruang Ide, ke beranda">
+            <img src="/logo-icon.png" alt="" width="452" height="455" className="size-10 md:size-11" />
+            <span className="leading-none">
+              <span className="block font-['Bebas_Neue'] text-[2rem] tracking-wide md:text-[2.25rem]">Ruang Ide</span>
+              <span className="-mt-0.5 block font-['Lora'] text-[0.62rem] whitespace-nowrap md:text-[0.7rem]">
+                Manis Alami Ide Tanpa Batas
+              </span>
+            </span>
           </a>
         </div>
 
