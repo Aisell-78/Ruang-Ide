@@ -47,8 +47,8 @@ export default function Navbar({ count, onCart }) {
           >
             {open ? <X size={22} /> : <MenuIcon size={22} />}
           </button>
-          <a href="#home" className="font-display text-3xl font-bold tracking-tight text-nipah-ink">
-            Ruang<span className="text-espresso"> Ide</span>
+          <a href="#home" className="block">
+            <img src="/logo.png" alt="Ruang Ide" width="244" height="69" className="h-11 w-auto md:h-12" />
           </a>
         </div>
 
