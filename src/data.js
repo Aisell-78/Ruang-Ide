@@ -17,6 +17,5 @@ export const MENU = [
 export const CONTACT = {
   address: 'Universitas Antakusuma',
   phone: '0822-5383-0442',
-  hours: 'Setiap hari, 08.00 – 21.00',
   instagram: 'ruang_ide51',
 }

@@ -13,7 +13,7 @@ npm test         # tes logika keranjang
 
 ## Yang perlu diganti
 
-- `src/data.js` — nomor WhatsApp, daftar menu & harga, alamat, jam buka, Instagram.
+- `src/data.js` — nomor WhatsApp, daftar menu & harga, alamat, Instagram.
 - `public/produk.png` — foto botol. Ganti dengan file asli `Image/Produk.png` (PNG transparan) supaya lebih tajam.
 - Teks per bagian ada di `src/components/` (Hero, Features, MenuSection, About, Contact).
 - Warna & font ada di `src/index.css` (bagian `@theme`).

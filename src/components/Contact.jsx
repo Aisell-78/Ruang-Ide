@@ -1,4 +1,4 @@
-import { AtSign, Clock, MapPin, MessageCircle, Phone } from 'lucide-react'
+import { AtSign, MapPin, MessageCircle, Phone } from 'lucide-react'
 import { CONTACT, WA_NUMBER } from '../data'
 
 export default function Contact() {
@@ -10,7 +10,6 @@ export default function Contact() {
       href: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(CONTACT.address)}`,
     },
     { icon: Phone, label: 'WhatsApp / Telepon', value: CONTACT.phone, href: `https://wa.me/${WA_NUMBER}` },
-    { icon: Clock, label: 'Jam buka', value: CONTACT.hours },
     {
       icon: AtSign,
       label: 'Instagram',
