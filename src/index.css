@@ -1,0 +1,39 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-display: 'Oswald', sans-serif;
+  --font-sans: 'DM Sans', system-ui, sans-serif;
+
+  /* Warna brand dari website lama Radit */
+  --color-nipah: #ff7434; /* oranye brand: untuk blok warna & dekorasi */
+  --color-nipah-ink: #b9461a; /* oranye gelap: aman untuk teks di atas krem (kontras 4.9:1) */
+  --color-espresso: #63331b; /* cokelat brand: tombol utama */
+  --color-ink: #2a1a12; /* teks utama */
+  --color-cream: #fbf6ef; /* latar */
+  --color-latte: #f1e4d3; /* latar section kedua */
+
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-marquee: marquee 30s linear infinite;
+}
+
+@keyframes float {
+  50% { transform: translateY(-14px) rotate(-2deg); }
+}
+@keyframes marquee {
+  to { transform: translateX(-50%); }
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+body { @apply bg-cream text-ink font-sans antialiased; }
+
+:focus-visible { outline: 3px solid var(--color-nipah); outline-offset: 3px; border-radius: 6px; }
+
+/* Muncul saat discroll (ditambah class .in oleh useReveal) */
+.reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s cubic-bezier(.2,.7,.2,1); }
+.reveal.in { opacity: 1; transform: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal { opacity: 1; transform: none; transition: none; }
+  *, *::before, *::after { animation: none !important; transition-duration: 0ms !important; }
+}
