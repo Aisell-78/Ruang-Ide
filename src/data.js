@@ -7,7 +7,7 @@ export const MENU = [
   {
     id: 'kopi-nipah-250',
     name: 'Kopi Susu Gula Nipah',
-    size: '150 ml',
+    size: '200 ml',
     price: 15000,
     desc: 'Satu-satunya menu kami, dan kami fokus bikin yang satu ini seenak mungkin. Espresso, susu segar, dan gula nipah yang legit.',
     image: '/produk.png',
